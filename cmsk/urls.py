@@ -9,6 +9,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'cmsk.views.home', name='home'),
     # url(r'^cmsk/', include('cmsk.foo.urls')),
 
+    url(r'^blog/', include('cmsk.blog.urls', namespace="post")),
+
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
