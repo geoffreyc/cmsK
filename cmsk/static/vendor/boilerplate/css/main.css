@@ -63,6 +63,7 @@ textarea {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .wrapper {
@@ -83,11 +84,14 @@ body {
 .main aside {
     border-top: 20px solid #e44d26;
 }
+.main aside{
+    border: 1px solid #66ccff;
+}
 
 /*.header-container,*/
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #2288bb;
 }
 
 .title {
@@ -98,6 +102,30 @@ body {
     padding: 5px 10px;
 }
 
+aside .side-title h3{
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 1.17em;
+    margin: 5px 0;
+    padding: 0 0 5px;
+    text-shadow: 1px 2px 0 #1B6E97;
+}
+
+aside .side-title h4{
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+    text-shadow: 1px 2px 0 #1B6E97;
+}
+aside .profile-photo{
+    margin: 15px 0 0;
+    text-align: center;
+}
+aside #nav-wrapper p{
+    color:#5accf9;
+    text-shadow: 1px 2px 0 #1B6E97;
+    line-height: 22px;
+}
 /* ==============
     MOBILE: Menu
    ============== */
@@ -114,19 +142,34 @@ nav a {
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
 
-    color: white;
-    background: #e44d26;
+    color: #000;
+    background: #fff;
+    text-shadow: 1px 1px 0 #777777;
+}
+nav a.current{
+    background: #2288bb;
+    color: #fff;
+    -moz-box-shadow: inset 0px 0px 15px 0px #16648a;
+    -webkit-box-shadow: inset 0px 0px 15px 0px #16648a;
+    -o-box-shadow: inset 0px 0px 15px 0px #16648a;
+    box-shadow: inset 0px 0px 15px 0px #16648a;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#16648a, Direction=NaN, Strength=15);
+    text-shadow: 1px 2px 0 #1B6E97;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: #999999;
+}
+nav a.current:hover,
+nav a.current:visited {
+    color: #fff;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 /* ==============
@@ -193,7 +236,7 @@ nav a:hover {
     }
     nav a {
         float: left;
-        width: 27%;
+        width: 73px;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
@@ -228,9 +271,10 @@ nav a:hover {
 
     /*.header-container,*/
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
+       /* -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
+                */
     }
 
 /* ============
@@ -253,12 +297,12 @@ nav a:hover {
 
     .main #site-content {
         float: right;
-        margin-left: 275px;
+        margin-left: 300px;
     }
 
     .main aside {
         position: absolute;
-        width: 250px;
+        width: 275px;
     }
 }
 @media only screen and (min-width: 1140px) {

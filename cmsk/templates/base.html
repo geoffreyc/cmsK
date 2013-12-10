@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,400italic,500italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'vendor/boilerplate/css/normalize.min.css' %}">
         <link rel="stylesheet" href="{% static 'vendor/boilerplate/css/main.css' %}">
 
@@ -33,9 +34,10 @@
                 <div id="site-content">
                     <nav class="clearfix">
                         <ul>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#" class="current">Blog</a></li>
                             <li><a href="#">Portfolio</a></li>
                             <li><a href="#">About Me</a></li>
+                            <li><a href="#">More</a></li>
                         </ul>
                     </nav>
                     <div class="content-wrapper">
@@ -61,7 +63,13 @@
                 </div>
                 <aside>
                     <div id="nav-wrapper">
-                        <h3>aside</h3>
+                        <div class="side-title">
+                            <div class="profile-photo">
+                                <img src="{% static 'img/profilephoto.jpg' %}" />
+                            </div>
+                            <h3>Geoffrey Compagnon</h3>
+                            <h4>Software Developer</h4>
+                        </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
                     </div>
                 </aside>
