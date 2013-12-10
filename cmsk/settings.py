@@ -1,5 +1,10 @@
 # Django settings for cmsk project.
 import os
+
+
+# DEFINING ROOT PATH
+SITE_ROOT = os.path.realpath(os.path.dirname(os.path.dirname(__file__)))
+
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -13,7 +18,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'base.db',                      # Or path to database file if using sqlite3.
+        'NAME': SITE_ROOT+'/base.db',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -50,7 +55,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-SITE_ROOT = os.path.realpath(os.path.dirname(os.path.dirname(__file__)))
+
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
