@@ -41,3 +41,4 @@ Thumbs.db
 .project
 .pydevproject
 .idea/
+*.pyc
