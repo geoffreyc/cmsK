@@ -141,7 +141,7 @@ INSTALLED_APPS = (
     'cmsk.blog',
     'cmsk.basecms',
     'south',
-    'tinymce'
+
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
