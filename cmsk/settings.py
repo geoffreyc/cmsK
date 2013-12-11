@@ -128,6 +128,7 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
 )
 
 INSTALLED_APPS = (
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -138,6 +139,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'cmsk.blog',
+    'cmsk.basecms',
+    'south',
+    'tinymce'
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

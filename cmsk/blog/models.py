@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+
 # User profile
 class UserProfile(models.Model):
     # This field is required.

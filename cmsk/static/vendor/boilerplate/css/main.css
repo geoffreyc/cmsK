@@ -66,255 +66,90 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    /*border-bottom: 20px solid #e44d26;*/
-    margin-bottom: 20px;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-.main aside{
-    border: 1px solid #66ccff;
-}
-
-/*.header-container,*/
-.footer-container,
-.main aside {
-    background: #2288bb;
-}
-
-.title {
-    color: white;
-}
-.content-wrapper{
-    background-color: #fff;
-    padding: 5px 10px;
-}
-
-aside .side-title h3{
-    border-bottom: 1px solid #FFFFFF;
-    font-size: 1.17em;
-    margin: 5px 0;
-    padding: 0 0 5px;
-    text-shadow: 1px 2px 0 #1B6E97;
-}
-
-aside .side-title h4{
-    font-size: 1.1em;
-    font-weight: normal;
-    margin: 0 0 10px;
-    padding: 0 0 5px;
-    text-shadow: 1px 2px 0 #1B6E97;
-}
-aside .profile-photo{
-    margin: 15px 0 0;
-    text-align: center;
-}
-aside #nav-wrapper p{
-    color:#5accf9;
-    text-shadow: 1px 2px 0 #1B6E97;
-    line-height: 22px;
-}
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: normal;
-
-    color: #000;
-    background: #fff;
-    text-shadow: 1px 1px 0 #777777;
-}
-nav a.current{
-    background: #2288bb;
-    color: #fff;
-    -moz-box-shadow: inset 0px 0px 15px 0px #16648a;
-    -webkit-box-shadow: inset 0px 0px 15px 0px #16648a;
-    -o-box-shadow: inset 0px 0px 15px 0px #16648a;
-    box-shadow: inset 0px 0px 15px 0px #16648a;
-    filter:progid:DXImageTransform.Microsoft.Shadow(color=#16648a, Direction=NaN, Strength=15);
-    text-shadow: 1px 2px 0 #1B6E97;
-}
-
-nav a:hover,
-nav a:visited {
-    color: #999999;
-}
-nav a.current:hover,
-nav a.current:visited {
-    color: #fff;
-}
-
-nav a:hover {
-    /*text-decoration: underline;*/
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 0px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    /*padding: 0px 5% 10px;*/
-}
-#nav-wrapper{
-    padding: 0px 5% 10px;
-}
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body nav{
+    background-color: #192730;
+    border-bottom: 2px solid #1b4159;
+}
+body nav ul{
+    text-align: center;
+    margin: 0;
+    font-size: 0px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+}
+body nav ul li{
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 7px;
+    word-spacing: 5px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-    nav{
-        margin-bottom: 15px;
-    }
-    nav a {
-        float: left;
-        width: 73px;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
+}
+body nav ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+}
+body nav ul li a:hover, body nav ul li a.current{
+    background-color: #1b4159;
 }
 
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    /*.header-container,*/
-    .main aside {
-       /* -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-                */
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        /*float: right;
-        width: 38%;*/
-        overflow: hidden;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main #site-content {
-        float: right;
-        margin-left: 300px;
-    }
-
-    .main aside {
-        position: absolute;
-        width: 275px;
-    }
+body nav ul li a{
+    color: #fff;
+    text-decoration: none;
 }
-@media only screen and (min-width: 1140px) {
 
-/* ===============
-    Maximal Width
-   =============== */
+header{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
+}
+header .profilewrap{
+    display: table;
+    width: 100%;
+}
+header .profile-photo{
+    /*float: left;*/
+    display: table-cell;
+    vertical-align: bottom;
+    width: 0px;
+
+}
+header .profile-text{
+    display:  table-cell;
+    vertical-align: bottom;
+    color:#fff;
+}
+header .profile-text h1{
+    border-bottom: 1px solid #fff;
+    padding: 0 0 10px 0;
+    margin: 0 0 0 10px;
+}
+header .profile-text h2{
+    padding: 0 0 10px 0;
+    margin: 10px 0 0 10px;
+    font-weight: normal;
+    font-size: 13pt;
+}
+.main.wrapper{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+#nav-wrapper{
+    float: left;
+    width: 250px;
+}
+#site-content{
+    margin-left: 250px;
+}
+
+.main-container{
+    background-image: url('../img/brushed.png');
 }
 
 /* ==========================================================================
