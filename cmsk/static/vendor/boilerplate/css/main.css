@@ -71,65 +71,65 @@ body {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body nav{
+body nav.topnav{
     background-color: #192730;
     border-bottom: 2px solid #1b4159;
 }
-body nav ul{
+body nav.topnav ul{
     text-align: center;
     margin: 0;
     font-size: 0px;
     letter-spacing: 0px;
     word-spacing: 0px;
 }
-body nav ul li{
+body nav.topnav ul li{
     display: inline-block;
     font-size: 15px;
     letter-spacing: 7px;
     word-spacing: 5px;
 
 }
-body nav ul li a{
+body nav.topnav ul li a{
     display: inline-block;
     padding: 10px 20px;
 }
-body nav ul li a:hover, body nav ul li a.current{
+body nav.topnav ul li a:hover, body nav ul li a.current{
     background-color: #1b4159;
 }
 
-body nav ul li a{
+body nav.topnav ul li a{
     color: #fff;
     text-decoration: none;
 }
 
-header{
+.header-container header{
     width: 100%;
     max-width: 1024px;
     margin: auto;
 
 }
-header .profilewrap{
+.header-container header .profilewrap{
     display: table;
     width: 100%;
 }
-header .profile-photo{
+.header-container header .profile-photo{
     /*float: left;*/
     display: table-cell;
     vertical-align: bottom;
     width: 0px;
 
 }
-header .profile-text{
+.header-container header .profile-text{
     display:  table-cell;
     vertical-align: bottom;
     color:#fff;
 }
-header .profile-text h1{
+.header-container header .profile-text h1{
     border-bottom: 1px solid #fff;
     padding: 0 0 10px 0;
     margin: 0 0 0 10px;
 }
-header .profile-text h2{
+.header-container header .profile-text h2{
     padding: 0 0 10px 0;
     margin: 10px 0 0 10px;
     font-weight: normal;
@@ -146,10 +146,32 @@ header .profile-text h2{
 }
 #site-content{
     margin-left: 250px;
+    border-left: 1px solid #efefef;
 }
 
 .main-container{
     background-image: url('../img/brushed.png');
+}
+.content-wrapper{
+    padding: 0 15px;
+}
+article header{
+    overflow: auto;
+}
+#nav-wrapper nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#nav-wrapper nav > ul > li a,#nav-wrapper nav > ul > li a:visited{
+    color: #3c3c3c;
+    text-decoration: none;
+}
+#nav-wrapper nav > ul > li  li{
+    padding: 0 5px 0 10px;
+}
+#nav-wrapper nav > ul > li li a{
+    color: #464646;
 }
 
 /* ==========================================================================

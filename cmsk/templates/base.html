@@ -21,7 +21,7 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="clearfix">
+        <nav class="clearfix topnav">
             <ul>
                 <li><a href="#" class="current">Blog</a></li>
                 <li><a href="#">Portfolio</a></li>
@@ -46,12 +46,20 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
                     <div id="nav-wrapper">
-                        <div class="side-title">
-
-                            <h3>Geoffrey Compagnon</h3>
-                            <h4>Software Developer</h4>
-                        </div>
-                        <p></p>
+                        {% block sidemenu %}
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Categories</a>
+                                        <ul>
+                                            <li><a href="#">General</a></li>
+                                            <li><a href="#">Lifestyle</a></li>
+                                            <li><a href="#">Programming</a></li>
+                                            <li><a href="#">Other</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        {% endblock %}
                     </div>
                     <div id="site-content">
                         <div class="content-wrapper">
